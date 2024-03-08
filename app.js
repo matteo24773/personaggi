@@ -10,7 +10,7 @@ const mongo=require('mongodb').MongoClient
 
 app.get('/dati',async (req,res)=>{
     let connect=await new mongo(uri).connect();
-    let db= connect.db('es');
+    let db= connect.db();
     let risult= await db.collection('charcter').find({"_id":2}).toArray();
     res.send(risult)
 })
