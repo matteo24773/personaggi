@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/front/css/log.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRAZIONE</title>
+</head>
+<body>
+    <div class="container-fluid d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+        <!-- Contenuto del div -->
+        <div class="reg">
+          <form action="/log" method="post">
+            <div class="mb-3">
+              <label for="Email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="Email" name="Email" placeholder="Email" >
+            </div>
+            <div class="mb-3">
+              <label for="Password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="Password" name="Password" placeholder="Password">
+            </div>
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="submit" style="margin-left: 5%;width: 90%;">registra</button>
+            </div>
+
+          </form>
+         
+      </div>
+
+    
+</body>
+</html>
