@@ -1,9 +1,9 @@
 
-const express=require('express');
+
 const logController=require('../controllers/logController')
-const router=express.Router();
+const router = require('./generalRouter')
 
 
-router.post( '/log',logController.autent);
+router.post( '/',logController.autent);
 router.get('/',logController.getLog);
 module.exports=router;

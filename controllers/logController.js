@@ -1,10 +1,11 @@
-const utenti=require('../model/utente').utenti
+const db=require('../utils/db')
 exports.getLog=(req,res)=>{
     res.render('log');
 }
 
 exports.autent=(req,res)=>{
-    const utent = new utenti();
+    const utents = new db('utenti');
+    console.log(utents);
     dati=req.body
     if(check(utent,dati)){
 

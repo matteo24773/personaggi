@@ -1,6 +1,6 @@
 const db=require('../utils/db')
 
 
-exports.getLog=(req,res)=>{
-    db.db('charcter')
+exports.get=(req,res)=>{
+    res.render('registr')
 }
